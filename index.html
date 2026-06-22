@@ -35,7 +35,7 @@
       radial-gradient(ellipse 1200px 600px at 80% -10%, rgba(168,45,138,0.10), transparent 60%),
       radial-gradient(ellipse 900px 500px at 0% 110%, rgba(75,46,131,0.12), transparent 60%);
   }
-  .wrap { max-width: 1080px; margin: 0 auto; padding: 64px 32px 80px; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 64px 32px 80px; }
 
   /* Header */
   .head { text-align: center; margin-bottom: 52px; }
@@ -43,7 +43,7 @@
   .head h1 {
     font-family: 'Fraunces', serif;
     font-weight: 500;
-    font-size: 42px;
+    font-size: 58px;
     letter-spacing: -0.02em;
     line-height: 1.05;
   }
@@ -68,7 +68,7 @@
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
+    gap: 28px;
   }
   .card {
     position: relative;
@@ -76,8 +76,8 @@
     flex-direction: column;
     background: var(--bg-elev);
     border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 30px 28px 26px;
+    border-radius: 18px;
+    padding: 44px 40px 38px;
     text-decoration: none;
     color: inherit;
     overflow: hidden;
@@ -109,7 +109,7 @@
     letter-spacing: 0.1em;
     color: var(--c);
   }
-  .card-icon { width: 30px; height: 30px; stroke: var(--c); stroke-width: 1.6; fill: none; }
+  .card-icon { width: 36px; height: 36px; stroke: var(--c); stroke-width: 1.6; fill: none; }
   .card-label {
     font-family: 'JetBrains Mono', monospace;
     font-size: 10px;
@@ -121,13 +121,13 @@
   .card-title {
     font-family: 'Fraunces', serif;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 33px;
     letter-spacing: -0.01em;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
   .card-title em { color: var(--text-dim); font-style: italic; font-weight: 400; }
   .card-desc {
-    font-size: 13.5px;
+    font-size: 12px;
     color: var(--text-dim);
     line-height: 1.6;
     flex: 1;
@@ -161,7 +161,9 @@
   @media (max-width: 720px) {
     .wrap { padding: 44px 20px 60px; }
     .grid { grid-template-columns: 1fr; }
-    .head h1 { font-size: 34px; }
+    .head h1 { font-size: 40px; }
+    .card { padding: 34px 28px 30px; }
+    .card-title { font-size: 28px; }
   }
 </style>
 </head>
@@ -170,7 +172,7 @@
     <header class="head">
       <img src="logo.png" alt="" onerror="this.style.display='none'">
       <h1>MEDFarms <em>Analytics Hub</em></h1>
-      <div class="tag">Michigan · Multi-brand · Four dashboards</div>
+      <div class="tag">Multi-brand</div>
     </header>
 
     <main class="grid">
@@ -180,7 +182,7 @@
           <span class="card-num">01</span>
           <svg class="card-icon" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
         </div>
-        <div class="card-label">Wholesale</div>
+        <div class="card-label">Distribution</div>
         <h2 class="card-title">Sales <em>overview</em></h2>
         <p class="card-desc">Revenue over time, top products and buyers, monthly performance, category mix, and invoice drill-down.</p>
         <div class="card-open">Open dashboard <span class="arrow">→</span></div>
